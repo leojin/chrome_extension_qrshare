@@ -1,4 +1,5 @@
 # chrome_extension_qrshare
+You can download it from [here](https://chrome.google.com/webstore/detail/qrshare/fgigcdpegpnnollkjgpbgcblpjaichdk)
 
 ##Version 1
 
