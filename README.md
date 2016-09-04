@@ -29,7 +29,7 @@
 ###Dependency
 1. nodejs、npm
 
-    Suggest you install nodejs with nvm ([https://github.com/creationix/nvm]()), you can install nodejs like this:
+    Suggest you install nodejs with nvm ([https://github.com/creationix/nvm](https://github.com/creationix/nvm)), you can install nodejs like this:
 
     ```shell
     nvm install 5.0
