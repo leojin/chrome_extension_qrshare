@@ -1,0 +1,16 @@
+{
+  "name": "chrome_extension_qrshare",
+  "authors": [
+    "leojin0701@gmail.com"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "qrcode.js": "qrcode-js#*"
+  }
+}

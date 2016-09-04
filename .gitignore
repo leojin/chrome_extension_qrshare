@@ -1,3 +1,8 @@
 .DS_Store
+npm-debug.log
 v1/.DS_Store
 v1/node_modules
+v1/bower_components
+v1/tmp
+v1/output
+v1/src/static/vendor/

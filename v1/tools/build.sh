@@ -54,13 +54,21 @@ function check_bin() {
 # Returns:
 #######################################
 function entry_init() {
+    local path_current="$PWD"
     local is_env_fail=0
+    cd "`dirname $0`/../"
     echo -e "\033[34m－1－ Install Packages\033[0m"
     check_bin "npm"
     if [ "$?" = "0" ]; then
         npm install
     else
         echo -e "\033[31m'npm' Not Found\033[0m"
+    fi
+    check_bin "bower"
+    if [ "$?" = "0" ]; then
+        bower install
+    else
+        echo -e "\033[31m'bower' Not Found\033[0m"
     fi
     echo -e "\033[34m－2－ Check Environment\033[0m"
     for module in ${BIN_GLOBAL[*]}; do
@@ -77,6 +85,7 @@ function entry_init() {
     else
         echo -e "\033[31mThe Environment Is Not OK\nGet Help From README\033[0m"
     fi
+    cd $path_current
     return 0
 }
 
